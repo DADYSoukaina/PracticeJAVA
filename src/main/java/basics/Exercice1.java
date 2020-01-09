@@ -26,10 +26,10 @@ public class Exercice1 {
 		return result;
 	}
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Exercice1 a = new Exercice1();
 		int result = a.calculate(1, "+", 1);
 		System.out.println(result);
-	}
+	}*/
 
 }

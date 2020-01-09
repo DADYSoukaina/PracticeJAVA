@@ -13,42 +13,42 @@ class Exercice1Tests {
 
 	Exercice1 ex = new Exercice1();
 
-	@BeforeEach
+	/*@BeforeEach
 	void beforEach(TestInfo info) {
 		System.out.println("Start test case for " + info.getDisplayName());
-	}
+	}*/
 
 	@Test
-	void additionTest() {
+	public void additionTest() {
 		int actualResult = ex.calculate(7, "+", 8);
 		int expectedResult = 15;
 		assertEquals(actualResult, expectedResult);
 	}
 
 	@Test
-	void substractionTest() {
+	public void substractionTest() {
 		int actualResult = ex.calculate(19, "-", 30);
 		int expectedResult = -11;
 		assertEquals(actualResult, expectedResult);
 	}
 
 	@Test
-	void mutiplicationTest() {
+	public void mutiplicationTest() {
 		int actualResult = ex.calculate(7, "*", 5);
 		int expectedResult = 35;
 		assertEquals(actualResult, expectedResult);
 	}
 
 	@Test
-	void divisionTest() {
+	public void divisionTest() {
 		int actualResult = ex.calculate(19, "/", 3);
 		int expectedResult = 6;
 		assertEquals(actualResult, expectedResult);
 	}
 	
-	@AfterEach
+	/*@AfterEach
 	void afterEach(TestInfo info) {
-		System.out.println("End test case for " + info.getDisplayName());
-	}
+		System.out.println("End test case for " + info.getDisplayName() +"Secessfully");
+	}*/
 
 }
